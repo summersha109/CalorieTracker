@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/activity_horizontal_margin">
+
+
+
+    <TextView
+        android:id="@+id/tv_reportDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:text="Report Date"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#4D4E4D"/>
+
+
+
+    <EditText
+        android:id="@+id/et_reportDate"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_reportDate"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_ben3"
+        android:clickable="true"
+        android:paddingLeft="10dp"
+        android:textColor="#4D4E4D"
+        android:textSize="18sp" />
+
+      <Button
+          android:id="@+id/bt_pie"
+          android:layout_width="100dp"
+          android:layout_height="40dp"
+          android:layout_toRightOf="@id/et_reportDate"
+          android:layout_below="@id/tv_reportDate"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="20dp"
+          android:background="@drawable/bg_btn"
+          android:textColor="#FFFFFF"
+          android:text="Pie Chart"/>
+
+    <TextView
+        android:id="@+id/tv_stDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/calorie_pie_chart"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#4D4E4D"
+        android:text="Report Start Date"
+        />
+
+    <TextView
+        android:id="@+id/tv_edDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_stDate"
+        android:layout_marginTop="15dp"
+        android:text="Report End Date"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#4D4E4D"/>
+
+    <EditText
+        android:id="@+id/et_stDate"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_stDate"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_ben3"
+        android:clickable="true"
+        android:paddingLeft="10dp"
+        android:textColor="#ffAD33"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_edDate"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_edDate"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_ben3"
+        android:clickable="true"
+        android:paddingLeft="10dp"
+        android:textColor="#ffAD33"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/bt_test"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/et_edDate"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_btn"
+        android:text="Bar Chart"
+        android:textColor="#FFFFFF" />
+
+
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/calorie_pie_chart"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_below="@id/et_reportDate"
+        android:layout_centerVertical="true"/>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/calorie_bar_chart"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_below="@id/bt_test"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp">
+
+
+    </com.github.mikephil.charting.charts.BarChart>
+
+
+</RelativeLayout>

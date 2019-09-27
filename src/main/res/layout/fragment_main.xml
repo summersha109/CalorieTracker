@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+
+    <ImageView
+        android:id="@+id/fitnessImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/fitness" />
+
+    <ImageView
+        android:id="@+id/icon_goal"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/time"
+        android:layout_marginLeft="150dp"
+        android:background="@drawable/goal_icon"/>
+
+    <ImageView
+        android:id="@+id/icon_burn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/burn_icon"
+        android:layout_below="@id/et_goal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:id="@+id/icon_step"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/step_icon"
+        android:layout_below="@id/icon_burn"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:id="@+id/icon_consum"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/consum_icon"
+        android:layout_below="@id/icon_step"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userResult"
+        android:layout_marginTop="10dp"
+        android:textColor="#808282"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fitnessImage"
+        android:layout_marginTop="20dp"
+        android:textColor="#808282"
+        android:textSize="30sp"
+        android:id="@+id/userResult"/>
+
+    <EditText
+        android:id="@+id/et_goal"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_goal"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:hint="Set Goal"
+        android:inputType="number"
+        android:paddingLeft="5dp"
+        android:background="@drawable/bg_ben3" />
+
+    <Button
+        android:id="@+id/bt_goal"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_goal"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/et_goal"
+        android:text="OK" />
+    <TextView
+        android:id="@+id/tv_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon_goal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tv_toalburn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_goal"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/icon_burn"
+        android:layout_marginRight="10dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_totalstep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon_burn"
+        android:layout_toRightOf="@id/icon_step"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_totalconsum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon_step"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/icon_consum"
+        android:layout_marginRight="10dp"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/bt_submitReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon_consum"
+        android:layout_toRightOf="@id/icon_consum"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="10dp"
+        android:text="Post"/>
+
+
+
+
+</RelativeLayout>

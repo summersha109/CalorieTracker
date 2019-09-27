@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Calorie Tracker</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_regist">RegistActivity</string>
+    <string name="level">Select Level of Activity</string>
+    <string name="dob">Date of Birth</string>
+    <string name="getdate">Get date</string>
+    <string-array name="numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="category">
+        <item>Fruit</item>
+        <item>Meat</item>
+        <item>Food</item>
+        <item>Drink</item>
+        <item>Bread</item>
+        <item>Vegetable</item>
+        <item>Dessert</item>
+    </string-array>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="edit_food">Enter text</string>
+    <string name="btnSearch">Search</string>
+</resources>

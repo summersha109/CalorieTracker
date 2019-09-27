@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#10EEC5">
+
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Calorie Tracker"
+        android:textColor="#FBFEFB"
+        android:textSize="50sp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="80dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textColor="#FBFEFB"
+
+        android:layout_marginTop="100dp"
+        android:background="@drawable/shape_button"
+        />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_marginTop="40dp"
+        android:textColor="#FBFEFB"
+        android:background="@drawable/shape_button"
+        />
+</LinearLayout>
+
+
